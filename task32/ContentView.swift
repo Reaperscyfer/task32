@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var fried = false
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
             Text("Colab!!!!")
+                .padding()
+            if fried {
+                Text("This class is frying me")
+            }
+            Button {
+                fried = !fried
+            } label: {
+                Image(systemName: "flag.fill")
+            }
         }
         .padding()
         
