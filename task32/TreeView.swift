@@ -12,8 +12,11 @@ struct TreeView: View {
         VStack{
             Text("This is a tree")
             Image(systemName: "tree.fill")
-                .foregroundStyle(Color.green)
+                
+            Image(systemName: "house.and.flag")
+            
         }
+        .foregroundStyle(Color.green)
     }
 }
 
